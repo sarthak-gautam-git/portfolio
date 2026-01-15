@@ -152,14 +152,23 @@ nav.scrolled {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     align-items: center;
     position: relative;
+    padding-top: 100px;
 }
 
 .hero-content {
     max-width: 800px;
+}
+
+.hero-header-flex {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
 }
 
 .hero-badge {
@@ -399,5 +408,22 @@ footer {
 
     .nav-links {
         display: none;
+    }
+
+    .hero {
+        padding-top: 120px;
+        align-items: flex-start;
+        min-height: auto;
+    }
+
+    .hero-header-flex {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .headshot-container {
+        width: 100px;
+        height: 100px;
     }
 }
